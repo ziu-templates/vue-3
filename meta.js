@@ -61,6 +61,7 @@ module.exports = {
   filters: {
     '.eslintrc.js': 'lint',
     '.eslintignore': 'lint',
+    'src/antd.js': 'antd',
     '.huskyrc': 'gitCommitMsg',
     'commitlint.config.js': 'gitCommitMsg',
   },
