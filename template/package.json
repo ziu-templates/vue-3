@@ -17,6 +17,9 @@
     "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json"
   },
   "dependencies": {
+    {{#antd}}
+    "ant-design-vue": "^1.3.10",
+    {{/antd}}
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",

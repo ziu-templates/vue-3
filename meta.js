@@ -34,11 +34,11 @@ module.exports = {
           value: 'airbnb',
           short: 'Airbnb',
         },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
-        },
+        // {
+        //   name: 'none (configure it yourself)',
+        //   value: 'none',
+        //   short: 'none',
+        // },
       ],
     },
     antd: {

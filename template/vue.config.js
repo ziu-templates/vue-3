@@ -10,6 +10,7 @@ function closeEslint(config) {
   eslintRule.uses.clear();
 }
 {{/unless}}
+{{#antd}}
 /**
  * antd样式配置
  * @returns { {less: {modifyVars: {"primary-color": string}, javascriptEnabled: boolean}} }
@@ -24,6 +25,7 @@ function antdStyle() {
     },
   };
 }
+{{/antd}}
 
 module.exports = {
   chainWebpack: config => {
@@ -34,7 +36,10 @@ module.exports = {
   },
   css: {
     loaderOptions: {
+      {{#antd}}
+      // use ant design vue
       ...antdStyle(),
+      {{/antd}}
     },
   },
 }
