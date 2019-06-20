@@ -1,5 +1,4 @@
-{{#lint}}
-{{#if_eq lintConfig "airbnb"}}
+{{#!lint}}
 /**
  * 关闭eslint配置
  * @param config
@@ -10,7 +9,6 @@ function closeEslint(config) {
   // 清除已有的所有 eslint loader。
   eslintRule.uses.clear();
 }
-{{/if_eq}}
 {{/lint}}
 /**
  * antd样式配置
@@ -29,12 +27,10 @@ function antdStyle() {
 
 module.exports = {
   chainWebpack: config => {
-    {{#lint}}
-    {{#if_eq lintConfig "airbnb"}}
+    {{#!lint}}
     // 关闭eslint
     closeEslint(config);
-    {{/if_eq}}
-      {{/lint}}
+    {{/lint}}
   },
   css: {
     loaderOptions: {
