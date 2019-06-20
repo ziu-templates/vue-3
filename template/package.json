@@ -12,7 +12,7 @@
     "commit": "ziu commit",
     {{/gitCommitMsg}}
     {{#img}}
-    "img": "npm run ziu-img -- src",
+    "img": "ziu img src",
     {{/img}}
     {{#changelog}}
     "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json && git add -u",
