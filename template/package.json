@@ -6,15 +6,21 @@
     {{#lint}}
     "lint": "vue-cli-service lint",
     {{/lint}}
-    "husky": "node node_modules/husky/lib/installer/bin install",
-    "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
     "serve": "vue-cli-service serve",
     "build": "node build/ziuServer.js",
     "stg": "npm run build -- staging",
     "testing": "npm run build -- testing",
+    {{#gitCommitMsg}}
+    "husky": "node node_modules/husky/lib/installer/bin install",
+    "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
     "commit": "ziu commit",
+    {{/gitCommitMsg}}
+    {{#img}}
     "img": "npm run ziu-img -- src",
-    "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json"
+    {{/img}}
+    {{#changelog}}
+    "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json && git add -u"
+    {{/changelog}}
   },
   "dependencies": {
     {{#antd}}

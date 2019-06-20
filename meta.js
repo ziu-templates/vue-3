@@ -46,18 +46,33 @@ module.exports = {
       message: 'Use Ant Design Vue?',
       default: false,
     },
-    gitCommitMsg: {
+    performance: {
       type: 'confirm',
-      message: 'Use commitlint to check commit message?(Angular Commit Message)',
+      message: 'Use Git Commit Hook/ to lint your code?',
     },
-    img: {
-        type: 'confirm',
-        message: 'Use Picture Compression?',
+    performanceConfig: {
+      when: 'performance',
+      type: 'checkbox',
+      message: 'Select',
+      choices: [
+        {
+          name: 'Use commitlint to check commit message?(Angular Commit Message)',
+          value: 'gitCommitMsg',
+        },
+      ],
     },
-    changelog: {
-      type: 'confirm',
-      message: 'Use CHANGELOG?',
-    },
+    // gitCommitMsg: {
+    //   type: 'confirm',
+    //   message: 'Use commitlint to check commit message?(Angular Commit Message)',
+    // },
+    // img: {
+    //     type: 'confirm',
+    //     message: 'Use Picture Compression?',
+    // },
+    // changelog: {
+    //   type: 'confirm',
+    //   message: 'Use CHANGELOG?',
+    // },
   },
   filters: {
     '.eslintrc.js': 'lint',
