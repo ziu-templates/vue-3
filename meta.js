@@ -50,29 +50,32 @@ module.exports = {
       type: 'confirm',
       message: 'Use Git Commit Hook/Picture Compression/CHANGELOG to your project?',
     },
-    performanceConfig: {
+    // performanceConfig: {
+    //   when: 'performance',
+    //   type: 'checkbox',
+    //   message: 'Select',
+    //   choices: [
+    //     {
+    //       name: 'Use commitlint to check commit message?(Angular Commit Message)',
+    //       value: 'gitCommitMsg',
+    //     },
+    //   ],
+    // },
+    gitCommitMsg: {
       when: 'performance',
-      type: 'checkbox',
-      message: 'Select',
-      choices: [
-        {
-          name: 'Use commitlint to check commit message?(Angular Commit Message)',
-          value: 'gitCommitMsg',
-        },
-      ],
+      type: 'confirm',
+      message: 'Use commitlint to check commit message?(Angular Commit Message)',
     },
-    // gitCommitMsg: {
-    //   type: 'confirm',
-    //   message: 'Use commitlint to check commit message?(Angular Commit Message)',
-    // },
-    // img: {
-    //     type: 'confirm',
-    //     message: 'Use Picture Compression?',
-    // },
-    // changelog: {
-    //   type: 'confirm',
-    //   message: 'Use CHANGELOG?',
-    // },
+    img: {
+      when: 'performance',
+      type: 'confirm',
+      message: 'Use Picture Compression?',
+    },
+    changelog: {
+      when: 'performance',
+      type: 'confirm',
+      message: 'Use CHANGELOG?',
+    },
   },
   filters: {
     '.eslintrc.js': 'lint',

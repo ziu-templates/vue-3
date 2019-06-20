@@ -54,9 +54,9 @@
     {{/gitCommitMsg}}
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
-    {{#performanceConfig}}
+    {{#performance}}
     "ziu": "^1.5.0",
-    {{/performanceConfig}}
+    {{/performance}}
     "vue-template-compiler": "^2.6.10"
   }
 }
