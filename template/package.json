@@ -15,7 +15,7 @@
     "img": "npm run ziu-img -- src",
     {{/img}}
     {{#changelog}}
-    "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json && git add -u"
+    "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json && git add -u",
     {{/changelog}}
     "serve": "vue-cli-service serve",
     "build": "node build/ziuServer.js",
