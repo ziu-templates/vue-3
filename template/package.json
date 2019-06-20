@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    {{#lint}}
     "lint": "vue-cli-service lint",
+    {{/lint}}
     "husky": "node node_modules/husky/lib/installer/bin install",
     "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
     "serve": "vue-cli-service serve",
@@ -22,13 +24,17 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
+    {{#lint}}
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    {{#if_eq lintConfig "airbnb"}}
     "@vue/eslint-config-airbnb": "^4.0.0",
+    {{/if_eq}}
     "babel-eslint": "^10.0.1",
-    "commitlint": "^8.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    {{/lint}}
+    "commitlint": "^8.0.0",
     "husky": "^2.4.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",

@@ -5,6 +5,7 @@
 node_modules/
 getready/
 resource/
+dist/
 test/
 npm-debug.log*
 yarn-debug.log*
