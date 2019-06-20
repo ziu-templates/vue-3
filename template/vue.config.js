@@ -1,4 +1,4 @@
-{{#!lint}}
+{{#unless lint}}
 /**
  * 关闭eslint配置
  * @param config
@@ -9,7 +9,7 @@ function closeEslint(config) {
   // 清除已有的所有 eslint loader。
   eslintRule.uses.clear();
 }
-{{/lint}}
+{{/unless}}
 /**
  * antd样式配置
  * @returns { {less: {modifyVars: {"primary-color": string}, javascriptEnabled: boolean}} }
@@ -27,10 +27,10 @@ function antdStyle() {
 
 module.exports = {
   chainWebpack: config => {
-    {{#!lint}}
+    {{#unless lint}}
     // 关闭eslint
     closeEslint(config);
-    {{/lint}}
+    {{/unless}}
   },
   css: {
     loaderOptions: {
