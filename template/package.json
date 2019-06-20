@@ -6,10 +6,6 @@
     {{#lint}}
     "lint": "vue-cli-service lint",
     {{/lint}}
-    "serve": "vue-cli-service serve",
-    "build": "node build/ziuServer.js",
-    "stg": "npm run build -- staging",
-    "testing": "npm run build -- testing",
     {{#gitCommitMsg}}
     "husky": "node node_modules/husky/lib/installer/bin install",
     "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
@@ -21,6 +17,10 @@
     {{#changelog}}
     "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json && git add -u"
     {{/changelog}}
+    "serve": "vue-cli-service serve",
+    "build": "node build/ziuServer.js",
+    "stg": "npm run build -- staging",
+    "testing": "npm run build -- testing"
   },
   "dependencies": {
     {{#antd}}
