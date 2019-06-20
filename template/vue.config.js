@@ -56,5 +56,5 @@ module.exports = {
       {{/antd}}
     },
   },
-}
-;
+  publicPath: '/', // 不同项目，可以修改为不同的path路径
+};
