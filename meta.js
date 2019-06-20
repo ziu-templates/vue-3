@@ -44,6 +44,7 @@ module.exports = {
     antd: {
       type: 'confirm',
       message: 'Use Ant Design Vue?',
+      default: false,
     },
     gitCommitMsg: {
       type: 'confirm',
