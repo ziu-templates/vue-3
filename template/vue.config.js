@@ -27,8 +27,22 @@ function antdStyle() {
 }
 {{/antd}}
 
+  /**
+   * 修改编译后的html文件名
+   * @param config
+   * @constructor
+   */
+  function chHtmlFileName(config) {
+    config.plugin('html')
+      .tap(args => {
+        args[0].filename = 'main.html';
+        return args;
+      });
+  }
+
 module.exports = {
   chainWebpack: config => {
+    chHtmlFileName(config);
     {{#unless lint}}
     // 关闭eslint
     closeEslint(config);

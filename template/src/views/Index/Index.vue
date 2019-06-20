@@ -1,5 +1,5 @@
 <template>
-  <div>初始化完成</div>
+  <div>Hello, world!</div>
 </template>
 
 <script>
