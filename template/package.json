@@ -57,6 +57,7 @@
     {{#performance}}
     "ziu": "^1.5.0",
     {{/performance}}
+    "vue-cli-plugin-ziu": "^1.0.1",
     "vue-template-compiler": "^2.6.10"
   }
 }
