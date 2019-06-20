@@ -14,7 +14,7 @@ function closeEslint(config) {
 {{/lint}}
 /**
  * antd样式配置
- * @returns {{less: {modifyVars: {"primary-color": string}, javascriptEnabled: boolean}}}
+ * @returns { {less: {modifyVars: {"primary-color": string}, javascriptEnabled: boolean}} }
  */
 function antdStyle() {
   return {
