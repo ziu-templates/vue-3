@@ -1,0 +1,38 @@
+{
+  "name": "vue-3-tpl-1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "husky": "node node_modules/husky/lib/installer/bin install",
+    "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
+    "serve": "vue-cli-service serve",
+    "build": "node build/ziuServer.js",
+    "stg": "npm run build -- staging",
+    "testing": "npm run build -- testing",
+    "commit": "ziu commit",
+    "img": "npm run ziu-img -- src",
+    "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 1000 && git add CHANGELOG.md package.json"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "commitlint": "^8.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^2.4.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "ziu": "^1.5.0"
+  }
+}
