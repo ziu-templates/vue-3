@@ -42,8 +42,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     {{/lint}}
+    {{#gitCommitMsg}}
     "commitlint": "^8.0.0",
     "husky": "^2.4.1",
+    {{/gitCommitMsg}}
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
