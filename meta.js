@@ -48,7 +48,7 @@ module.exports = {
     },
     performance: {
       type: 'confirm',
-      message: 'Use Git Commit Hook/ to lint your code?',
+      message: 'Use Git Commit Hook/Picture Compression/CHANGELOG to your project?',
     },
     performanceConfig: {
       when: 'performance',
