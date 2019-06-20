@@ -42,14 +42,14 @@
     "@vue/eslint-config-airbnb": "^4.0.0",
     {{/if_eq}}
     "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    {{/lint}}
     {{#antd}}
     "babel-plugin-import": "^1.12.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     {{/antd}}
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    {{/lint}}
     {{#gitCommitMsg}}
     "commitlint": "^8.0.0",
     "husky": "^2.4.1",
