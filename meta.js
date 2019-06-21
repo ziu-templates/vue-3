@@ -46,9 +46,14 @@ module.exports = {
       message: 'Use Ant Design Vue?',
       default: false,
     },
+    gitCommitMsg: {
+      when: 'performance',
+      type: 'confirm',
+      message: 'Use commitlint to check commit message?(Angular Commit Message)',
+    },
     performance: {
       type: 'confirm',
-      message: 'Use Git Commit Hook/Picture Compression/CHANGELOG to your project?',
+      message: 'Use Picture Compression/CHANGELOG to your project?',
     },
     // performanceConfig: {
     //   when: 'performance',
@@ -61,11 +66,6 @@ module.exports = {
     //     },
     //   ],
     // },
-    gitCommitMsg: {
-      when: 'performance',
-      type: 'confirm',
-      message: 'Use commitlint to check commit message?(Angular Commit Message)',
-    },
     img: {
       when: 'performance',
       type: 'confirm',

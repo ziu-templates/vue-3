@@ -9,8 +9,10 @@
     {{#gitCommitMsg}}
     "husky": "node node_modules/husky/lib/installer/bin install",
     "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
-    "commit": "ziu commit",
     {{/gitCommitMsg}}
+    {{#performance}}
+    "commit": "ziu commit",
+    {{/performance}}
     {{#img}}
     "img": "ziu img src",
     {{/img}}
