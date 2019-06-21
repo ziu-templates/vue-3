@@ -47,7 +47,6 @@ module.exports = {
       default: false,
     },
     gitCommitMsg: {
-      when: 'performance',
       type: 'confirm',
       message: 'Use commitlint to check commit message?(Angular Commit Message)',
     },
