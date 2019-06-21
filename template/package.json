@@ -20,7 +20,7 @@
     "serve": "npm run dev",
     "dev": "npm run build -- development",
     "build": "node scripts/bin/build.js",
-    "stg": "npm run build -- staging",
+    "staging": "npm run build -- staging",
     "testing": "npm run build -- testing",
     "report": "npm run build -- production -r"
   },
