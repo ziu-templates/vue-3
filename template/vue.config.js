@@ -44,5 +44,10 @@ module.exports = {
   },
   assetsDir: 'static',
   indexPath: 'main.html',
+  devServer: {
+    https: false,
+    host: 'localhost',
+    port: '8080',
+  },
   publicPath: '/', // 不同项目，可以修改为不同的path路径
 };
