@@ -44,6 +44,15 @@ module.exports = {
   },
   assetsDir: 'static',
   indexPath: 'main.html',
+  pages: {
+    main: {
+      entry: 'src/main.js',
+        // 模板来源
+        template: 'public/main.html',
+        // 在 dist/index.html 的输出
+        filename: 'index.html',
+    }
+  },
   devServer: {
     https: false,
     host: 'localhost',

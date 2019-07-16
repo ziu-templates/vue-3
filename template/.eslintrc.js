@@ -11,6 +11,12 @@ module.exports = {
     parser: 'babel-eslint',
   },
   rules: {
+    'import/extensions': ['error', 'always', {
+      'js': 'never',
+      'vue': 'never'
+    }],
+    'prefer-promise-reject-errors': 0,
+    'linebreak-style': 0,
     'no-use-before-define': 0,
     // not require constant expressions in conditions
     'no-constant-condition': 0,
