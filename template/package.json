@@ -59,7 +59,7 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     {{#performance}}
-    "ziu": "^1.5.0",
+    "ziu": "^1.6.1",
     {{/performance}}
     "vue-cli-plugin-ziu": "^1.0.2",
     "minimist": "^1.2.0",
