@@ -53,7 +53,7 @@
     "less-loader": "^5.0.0",
     {{/antd}}
     {{#gitCommitMsg}}
-    "commitlint": "^8.0.0",
+    "commitlint": "^8.1.0",
     "husky": "^2.4.1",
     {{/gitCommitMsg}}
     "node-sass": "^4.9.0",
