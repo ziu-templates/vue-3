@@ -11,14 +11,11 @@
     "unhusky": "node node_modules/husky/lib/installer/bin uninstall",
     {{/gitCommitMsg}}
     {{#performance}}
-    "commit": "ziu commit",
+    "commit": "git-cz",
     {{/performance}}
-    {{#img}}
-    "img": "ziu img src",
-    {{/img}}
     {{#changelog}}
-    "cl": "ziu cl -p angular -i CHANGELOG.md -s -r 1000",
-    "postversion": "ziu cl -p angular -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md package.json && git add -u",
+    "cl": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1000",
+    "postversion": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md package.json && git add -u",
     {{/changelog}}
     "serve": "npm run dev",
     "dev": "npm run build -- development",
@@ -60,7 +57,8 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     {{#performance}}
-    "ziu": "^1.6.2",
+    "conventional-changelog-cli": "^2.0.31",
+    "git-cz": "^3.3.0",
     {{/performance}}
     "vue-cli-plugin-ziu": "^1.0.2",
     "minimist": "^1.2.0",
