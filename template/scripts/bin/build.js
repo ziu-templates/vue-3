@@ -28,7 +28,8 @@ function execFn({ cmd = 'npm', argvs = [] } = {}) {
     shell: true,
   }, {}));
 
-  exec.on('exit', () => {
+  exec.on('exit', (code) => {
+    process.exitCode = code;
     console.log('\n System exit! \n');
   });
 }
